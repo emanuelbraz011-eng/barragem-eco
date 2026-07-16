@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBarrier Pro Premium - Turma 210</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container text-center">
+            <span class="badge-eco">🌿 Projeto Integrador Escolar - Turma 210</span>
+            <h1>EcoBarrier <span class="text-gradient">Wood Tech Pro</span></h1>
+            <p>Sistema modular de engenharia fluvial sustentável para contenção de poluição antrópica e preservação da fauna regional.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- PRODUTOS UTILIZADOS NO PLANEJAMENTO -->
+        <section class="products-section">
+            <h2 class="section-title">🔬 Laboratório de Materiais e Economia Circular</h2>
+            <p class="section-intro text-center">Clique nos botões abaixo para inspecionar os componentes selecionados pela nossa turma:</p>
+            
+            <div class="materials-tabs">
+                <button class="tab-btn active" onclick="switchMaterial(event, 'pet')">🧴 Garrafa PET</button>
+                <button class="tab-btn" onclick="switchMaterial(event, 'madeira')">🪵 Madeira Plástica</button>
+                <button class="tab-btn" onclick="switchMaterial(event, 'rede')">🕸️ Tela Mosquiteiro</button>
+                <button class="tab-btn" onclick="switchMaterial(event, 'solar')">☀️ Painel Fotovoltaico</button>
+            </div>
+
+            <div class="material-display-card" id="material-card">
+                <h3 id="mat-title">🧴 Garrafa PET (Cinturão de Flutuação)</h3>
+                <p id="mat-desc">Garrafas PET de 2 litros perfeitamente vedadas e amarradas em série dentro de sacos de ráfia ou telas plásticas. Elas geram a força de empuxo necessária para manter toda a estrutura teórica flutuando de forma estável na superfície da água.</p>
+            </div>
+        </section>
+        <!-- ENGENHARIA DE INSTALAÇÃO COM 4 BARCOS -->
+        <section class="logistics-section">
+            <h2 class="section-title">🚢 Engenharia e Logística de Instalação (4 Barcos)</h2>
+            <p class="section-intro text-center">A ancoragem foi projetada de forma tática para ocorrer sem interromper a navegação comercial do rio:</p>
+            
+            <div class="logistics-grid">
+                <div class="logistics-step-card">
+                    <div class="step-num">01</div>
+                    <h3>Reboque e Tração</h3>
+                    <p><strong>Dois barcos de tração pesada</strong> posicionam-se nas extremidades da barreira, puxando a estrutura em paralelo para esticar os cabos tensores contra o fluxo do rio.</p>
+                </div>
+                <div class="logistics-step-card">
+                    <div class="step-num">02</div>
+                    <h3>Ancoragem Técnica</h3>
+                    <p>Outros <strong>dois barcos de apoio leve</strong> realizam a fixação mecânica de cabos de aço nas margens e lançam poitas de concreto no leito arenoso.</p>
+                </div>
+                <div class="logistics-step-card">
+                    <div class="step-num">03</div>
+                    <h3>Ângulo Tático de 45°</h3>
+                    <p>A estrutura corta o rio em diagonal. Isso faz com que a própria força da correnteza empurre os plásticos de forma passiva em direção ao ponto de coleta na margem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREÇO E ESTIMATIVA FINANCEIRA -->
+        <section class="table-section">
+            <h2 class="section-title text-center">💰 Estimativa Financeira de Materiais Planejados</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Insumo Sustentável</th>
+                            <th>Abordagem de Coleta Planejada</th>
+                            <th>Custo Estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Garrafas PET Vazias</td><td>Arrecadação solidária com a comunidade escolar.</td><td class="price-cell">R$ 0,00</td></tr>
+                        <tr><td>Ripas de Madeira Reutilizada</td><td>Pallets descartados ou madeiras de descarte tratadas.</td><td class="price-cell">R$ 0,00</td></tr>
+                        <tr><td>Rede Mosquiteira / Nylon</td><td>Retalhos de telas plásticas ou redes inutilizadas.</td><td class="price-cell">R$ 30,00</td></tr>
+                        <tr><td>Mini Painel Solar de Jardim</td><td>Componentes reaproveitados de luminárias solares velhas.</td><td class="price-cell">R$ 25,00</td></tr>
+                        <tr><td>Cordas e Abraçadeiras</td><td>Elementos de fixação mecânica para união estável.</td><td class="price-cell">R$ 45,00</td></tr>
+                        <tr class="total-row"><td>Orçamento de Execução</td><td>Foco em aproveitamento máximo e desperdício zero.</td><td class="price-cell total-price">R$ 100,00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ESTATÍSTICAS E LINHA DO TEMPO DA BARREIRA (ATÉ 2 ANOS) -->
+        <section class="timeline-section">
+            <h2 class="section-title">📉 Linha do Tempo Avançada: Estatísticas de Poluição</h2>
+            <p class="section-intro text-center">Selecione o período cronológico para analisar a eficiência e a redução da poluição superficial na água:</p>
+            
+            <div class="materials-tabs">
+                <button class="tab-btn active" onclick="switchTimeline(event, 'inicio')">📅 1 Mês</button>
+                <button class="tab-btn" onclick="switchTimeline(event, 'm3')">📅 3 Meses</button>
+                <button class="tab-btn" onclick="switchTimeline(event, 'm6')">📅 6 Meses</button>
+                <button class="tab-btn" onclick="switchTimeline(event, 'a1')">📅 1 Ano</button>
+                <button class="tab-btn" onclick="switchTimeline(event, 'a15')">📅 1.5 Ano</button>
+                <button class="tab-btn" onclick="switchTimeline(event, 'a2')">📅 2 Anos</button>
+            </div>
+
+            <div class="timeline-graph-wrapper">
+                <div class="graph-display-container">
+                    <span class="graph-label">Volume de Lixo Plástico Detectado no Fluxo:</span>
+                    <div class="progress-bar-container large-graph">
+                        <div id="timeline-progress-fill" class="progress-fill bar-danger" style="width: 100%"></div>
+                    </div>
+                    <span class="graph-value-text" id="timeline-value">100% (Volume Crítico)</span>
+                </div>
+                <div class="material-display-card" id="timeline-card" style="margin-top: 15px;">
+                    <h3 id="timeline-title">🚀 Mês 01: Implantação e Testes</h3>
+                    <p id="timeline-desc">A barreira é lançada. Níveis de poluição flutuante estão no topo (100%), gerando grande acúmulo inicial que sobrecarrega as margens antes das primeiras coletas periódicas.</p>
+                </div>
+            </div>
+        </section>
+        <!-- PROTEÇÃO DA BIODIVERSIDADE (PEIXES, CAPIVARAS, PATOS E LONTRAS) -->
+        <section class="biodiversity-section">
+            <h2 class="section-title">🦆 Preservação Zootécnica das Espécies Locais</h2>
+            <p class="section-intro text-center">Nossa barreira foi planejada para deter os plásticos sem interferir nas rotas biológicas ou ferir os animais nativos:</p>
+            
+            <div class="materials-tabs">
+                <button class="tab-btn active" onclick="switchFauna(event, 'peixes')">🐟 Peixes e Piracema</button>
+                <button class="tab-btn" onclick="switchFauna(event, 'capivaras')">🦦 Capivaras e Lontras</button>
+                <button class="tab-btn" onclick="switchFauna(event, 'aves')">🦆 Patos e Aves Aquáticas</button>
+            </div>
+
+            <div class="material-display-card fauna-card" id="fauna-card">
+                <h3 id="fauna-title">🐟 Passagem Livre por Baixo (Peixes e Anfíbios)</h3>
+                <p id="fauna-desc">A malha fina de mosquiteiro afunda no máximo 30 cm na lâmina d'água superior, onde o plástico flutua. O leito do rio fica 100% livre. Durante a Piracema, espécies como Dourados e Pintados sobem o rio para desovar pelos canais profundos sem risco de emalhar ou ferir suas escamas.</p>
+            </div>
+        </section>
+
+        <!-- MAQUETE VIVA 3D COM POP-UPS DINÂMICOS CONTROLADOS POR JAVASCRIPT (CLIQUE REAL) -->
+        <section class="maquete-3d-section">
+            <h2 class="section-title">📐 Maquete Comercial 3D - Cenário Vivo Interativo</h2>
+            <p class="section-intro text-center">Clique e arraste na área do rio abaixo para girar em 360°. Clique nos marcadores de texto com interrogação para abrir as fichas de materiais:</p>
+            
+            <div class="cena-3d-container" id="cena-maquete">
+                <div class="rio-3d-fluid">
+                    <div class="objeto-3d-modular" id="modulo-barreira">
+                        <div class="cubo-madeira-3d">
+                            <div class="face-viga m-frente"></div>
+                            <div class="face-viga m-tras"></div>
+                            <div class="face-viga m-topo"></div>
+                            <div class="face-viga m-base"></div>
+                            <div class="face-viga m-esquerda"></div>
+                            <div class="face-viga m-direita"></div>
+                        </div>
+                        <div class="gatilho-info seta-madeira" data-info="madeira">🪵 Viga de Madeira Plástica ?</div>
+
+                        <div class="cilindro-pet-3d pet-frente">
+                            <div class="face-pet p-frente"></div>
+                            <div class="face-pet p-tras"></div>
+                            <div class="face-pet p-topo"></div>
+                            <div class="face-pet p-base"></div>
+                        </div>
+                        <div class="cilindro-pet-3d pet-tras">
+                            <div class="face-pet p-frente"></div>
+                            <div class="face-pet p-tras"></div>
+                            <div class="face-pet p-topo"></div>
+                            <div class="face-pet p-base"></div>
+                        </div>
+                        <div class="gatilho-info seta-pet" data-info="pet">🧴 Flutuadores (Garrafas PET) ?</div>
+
+                        <div class="malha-filtro-3d"><div class="r-frente"></div></div>
+                        <div class="gatilho-info seta-filtro-rede" data-info="rede">🕸️ Filtro de Rede ?</div>
+
+                        <div class="bloco-solar-3d">
+                            <div class="face-solar s-topo"></div>
+                            <div class="face-solar s-frente"></div>
+                        </div>
+                        <div class="gatilho-info seta-solar" data-info="solar">☀️ Painel Solar ?</div>
+                    </div>
+
+                    <!-- FAUNA AQUÁTICA AVANÇADA EM MOVIMENTAÇÃO REALISTA -->
+                    <div class="fauna-3d-viva animal-dourado">
+                        <div class="peixe-corpo p-ouro"></div>
+                        <div class="peixe-rabo r-ouro"></div>
+                        <div class="peixe-barbatana b-ouro"></div>
+                        <span class="tag-fauna">🐟 Dourado Articulado</span>
+                    </div>
+                    <div class="fauna-3d-viva animal-pintado">
+                        <div class="peixe-corpo p-couro-pintado"></div>
+                        <div class="peixe-rabo r-pintado"></div>
+                        <div class="peixe-barbatana b-pintado"></div>
+                        <span class="tag-fauna">🐟 Pintado com Manchas</span>
+                    </div>
+                    <div class="fauna-3d-viva animal-lontra">
+                        <div class="lontra-corpo"></div>
+                        <div class="lontra-cauda"></div>
+                        <div class="lontra-cabeca"></div>
+                        <span class="tag-fauna">🦦 Lontra Fluida</span>
+                    </div>
+                    <div class="fauna-3d-viva animal-pato">
+                        <div class="pato-corpo"></div>
+                        <div class="pato-cabeca"></div>
+                        <div class="pato-bico"></div>
+                        <span class="tag-fauna">🦆 Pato Selvagem</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="popover-explicativo-js" class="popover-escondido"></div>
+            <div class="container text-center" style="margin-top: 15px;"><div class="hint-3d-bottom">🔄 **Controle**: Clique e segure no rio para mover os lados. Clique nos botões verdes com "?" para ler.</div></div>
+        </section>
+        <!-- ETAPA 1: O GAME DO SIMULADOR (TRAVA AS ETAPAS SEGUINTES) -->
+        <section class="game-section">
+            <div class="text-center">
+                <span class="step-indicator">ETAPA 1</span>
+                <h2 class="section-title">🕹️ Jogo Unificado de Retenção Ativa</h2>
+                <p class="section-intro">Colete resíduos clicando neles. Acumule 500 KG para desbloquear automaticamente a Etapa 2 e a Etapa 3 seguidinhas abaixo!</p>
+            </div>
+            
+            <div id="game-container" style="margin-top:20px;">
+                <div class="game-top-bar">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span id="status-text">Aguardando Inicialização...</span>
+                    </div>
+                    <button class="btn btn-primary" id="start-game-btn">Lançar Barreira no Rio</button>
+                </div>
+                <div class="game-dashboard">
+                    <div class="dash-stat">
+                        <span class="stat-label">Carga Retida Coletada</span>
+                        <div class="graph-bar-row">
+                            <span class="stat-value"><span id="score-val">0</span> <small>/ 500 KG</small></span>
+                            <div class="progress-bar-container"><div id="capacity-progress" class="progress-fill"></div></div>
+                        </div>
+                    </div>
+                    <div class="dash-stat">
+                        <span class="stat-label">Integridade do Ecossistema</span>
+                        <span class="stat-value" id="lives-display">❤️❤️❤️</span>
+                    </div>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="ocean-canvas" width="650" height="420"></canvas>
+                    <div id="lock-screen">
+                        <div class="lock-icon">🔒</div>
+                        <h3>Capacidade Esgotada! (500 KG)</h3>
+                        <p>O simulador travou de forma segura para não sobrecarregar as garrafas PET do projeto.</p>
+                        <button class="btn btn-warning" id="reset-game-btn">Esvaziar Estrutura e Destravar Etapas Práticas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ETAPA 2: QUIZ REDUZIDO PARA EXATAMENTE 5 PERGUNTAS -->
+        <section class="quiz-section fade-disabled" id="quiz-section-wrapper">
+            <div class="text-center">
+                <span class="step-indicator">ETAPA 2</span>
+                <h2 class="section-title">📝 Quiz de Validação Científica (5 Perguntas)</h2>
+                <p id="quiz-locked-msg" class="locked-text">🔒 Alcance 500 KG na Etapa 1 acima para destravar o questionário de alternativas!</p>
+            </div>
+            
+            <div class="quiz-box" id="quiz" style="display: none;">
+                <div class="quiz-progress-bar"><div id="quiz-progress-fill"></div></div>
+                <div id="quiz-body">
+                    <div class="question-text" id="question">Aguardando liberação...</div>
+                    <div class="options-container" id="options"></div>
+                </div>
+                <div id="quiz-result" style="display: none; text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">🏆</div>
+                    <h3>Avaliação do Quiz Concluída!</h3>
+                    <p id="quiz-score-text" style="margin: 15px 0; font-size: 1.1rem;"></p>
+                    <button class="btn btn-primary" onclick="restartQuiz()">Refazer Questões</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ETAPA 3: INTERAÇÃO DE CHIPS DE TRIAGEM EXPANDIDA -->
+        <section class="step3-section fade-disabled" id="step3-section-wrapper">
+            <div class="text-center">
+                <span class="step-indicator">ETAPA 3</span>
+                <h2 class="section-title">🧐 Considerações Finais: Triagem Dinâmica de Insumos</h2>
+                <p id="step3-locked-msg" class="locked-text">🔒 Conclua a pesagem mecânica da Etapa 1 para abrir a caixa de triagem!</p>
+                <p id="step3-instructions" style="display: none; margin-bottom: 20px;"><strong>Desafio Técnico de Seleção:</strong> Clique diretamente nos materiais ecológicos corretos aceitos no escopo do projeto:</p>
+            </div>
+
+            <div class="items-check-container" id="items-check-box" style="display: none;">
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! Garrafas PET garantem o empuxo da estrutura.')">🧴 Garrafa PET</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! A viga de madeira plástica forma o chassi rígido.')">🪵 Madeira Plástica</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! A malha fina de mosquiteiro impede plásticos pequenos.')">🕸️ Tela Mosquiteiro</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! Cordas de nylon velhas servem para amarração estável.')">🧵 Corda de Nylon Reutilizada</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! Abraçadeiras plásticas recicláveis unem os gomos de PET.')">⛓️ Abraçadeiras Plásticas</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, true, 'Correto! Pequenos painéis solares velhos dão sinalização noturna.')">☀️ Mini Painel Solar</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, false, 'Incorreto! Pilhas comuns contaminam o rio com metais pesados.')">🔋 Pilhas Químicas</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, false, 'Incorreto! O isopor industrial quebra-se em microplásticos.')">📦 Isopor Industrial</div>
+                <div class="interactive-item-chip" onclick="checkItem(this, false, 'Incorreto! Redes de metal enferrujam rápido na água.')">🕸️ Arame Galvanizado</div>
+            </div>
+            <div id="step3-feedback-text" class="text-center" style="margin-top: 15px; font-weight: 600; min-height: 24px;"></div>
+        </section>
+
+        <!-- AVALIAÇÃO DO SITE DA BANCA -->
+        <section class="form-section">
+            <h2 class="section-title text-center">💬 Painel de Parecer Técnico e Notas da Feira</h2>
+            <div class="feedback-form">
+                <form id="evaluation-form" onsubmit="handleFeedbackSubmit(event)">
+                    <div class="form-group">
+                        <label for="user-name">Seu Nome / Matrícula</label>
+                        <input type="text" id="user-name" required placeholder="Digite aqui seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">O que achou da utilidade e do site do projeto?</label>
+                        <select id="rating" required>
+                            <option value="5">⭐⭐⭐⭐⭐ Excelente proposta e site interativo</option>
+                            <option value="4">⭐⭐⭐⭐ Ótima aplicação de engenharia</option>
+                            <option value="3">⭐⭐⭐ Bom e funcional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="opinion">Insira suas observações sobre a barreira:</label>
+                        <textarea id="opinion" rows="2" required placeholder="Escreva seu parecer..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Registrar no Painel Público</button>
+                </form>
+                <div id="form-success"></div>
+
+                <div class="comments-accordion-wrapper">
+                    <button class="accordion-trigger" onclick="toggleCommentsSection()">
+                        <span>💬 Comentários Recentes (<span id="comment-count">2</span>)</span>
+                        <span class="arrow-icon" id="acc-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content" id="comments-box">
+                        <div class="comments-list" id="dynamic-comments-list">
+                            <div class="comment-item">
+                                <p class="comment-author">Avaliador Escolar <span>⭐⭐⭐⭐⭐</span></p>
+                                <p class="comment-text">Excelente linha de raciocínio da Turma 210. O mapeamento dos materiais certos demonstra boa consciência ecológica.</p>
+                            </div>
+                            <div class="comment-item">
+                                <p class="comment-author">Visitante <span>⭐⭐⭐⭐</span></p>
+                                <p class="comment-text">Muito interessante a simulação da pesagem de resíduos por quilos no game! Deixou a ideia bem didática.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <p class="footer-logo">EcoBarrier <span>Wood</span></p>
+            <div class="footer-credits-box">
+                <p class="names">Alunos da Nossa Sala</p>
+                <p class="class-badge">TURMA 210 | Projeto Integrador 2026</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
